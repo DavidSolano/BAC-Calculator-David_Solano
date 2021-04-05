@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Calculator</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="bac.js"></script>
+    <style>
+        .output
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Trip Calculator</h1>
+<br>
+
+<label for="beerConsumed">Number of Beers Consumed</label>
+<input type="number" id="beerConsumed" min="0" max="9999">
+<br>
+
+<label for="wineConsumed">Glasses of Wine Consumed</label>
+<input type="number" id="wineConsumed" min="0" max="9999">
+<br>
+
+<label for="shotsConsumed">Number of Shots Consumed</label>
+<input type="number" id="shotsConsumed" min="0" max="9999">
+<br>
+
+<label for="weightInPounds">Your Weight in Pounds</label>
+<input type="number" id="weightInPounds" min="0" max="9999">
+<br>
+
+<label for="hoursSinceDrink">Hours Since Your First Drink</label>
+<input type="number" id="hoursSinceDrink" min="0" max="9999">
+<br>
+
+<button>Calculate My BAC</button>
+
+<p class="output">Your Blood Alcohol Content (BAC) is: <span id="alcohol"></span>% </p>
+
+</body>
+</html>
